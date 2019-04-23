@@ -11,7 +11,7 @@ const Notifications = (props) => {
             Notifications
           </span>
           <ul className="notifications">
-            <li>{ notifications && notifications.map(item => {
+            { notifications && notifications.map(item => {
               return (
                 <li key={item.id}>
                   <span className="pink-text">{item.user} </span>
@@ -22,8 +22,7 @@ const Notifications = (props) => {
 
                 </li>
               )
-               
-              })}</li>
+              })}
           </ul>
         </div>
       </div>
